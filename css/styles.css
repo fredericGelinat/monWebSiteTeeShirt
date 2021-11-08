@@ -188,7 +188,7 @@ sliders starts
     z-index: -9;
     transition: all 1.5s ease-in-out ;
     opacity: 0;
-    background-image: url(/monWebSiteTeeShirt/images/origine/2015.png);
+    background-image: url(/images/origine/2015.png);
 }
 .service-wrap::before{
     top: -37px;
@@ -322,3 +322,23 @@ sliders starts
     color: whitesmoke;
 }
 
+/*----------works styles-----------*/
+.work{
+    margin-top: 25px;
+}
+.row.no-gutters [class*=col-]
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+.img-wrapper{
+    overflow: hidden;
+}
+.img-wrapper img{
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-out;
+}
