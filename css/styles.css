@@ -81,13 +81,54 @@ navigation with bgcolor
 /*====================
 sliders starts
 ====================*/
+.dessinsTitre{
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: rgb(7, 12, 83);
+    text-transform: uppercase;
+    font-size: xx-large;
+    letter-spacing: 5px;
+}
+.dessinsSousTitre{
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    color: rgb(248, 97, 97);
+}
 .slider{
     width: 100%;
     height: 700px;
-    background-image: url(../images/marqueTraansparentBleu.png);
-    background-size: cover;
-    background-position: center;
+   
+    margin:0;
+    padding:0;
+        background: url(../images/marqueTraansparentBleu.png);
+        /*background-size: cover;
+        /*background-position: center;
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center ;
+
+/* Background image doesn’t tile */
+        background-repeat: no-repeat;
+
+/* Background image is fixed in the viewport so that it doesn’t move when
+the content’s height is greater than the image’s height 
+        background-attachment: fixed;*/
+
+/* This is what makes the background image rescale based
+on the container’s size */
+       /* background-size: cover;*/
+      
+        background-size:contain;
+        
+/* Set a background color that will be displayed
+while the background image is loading 
+        background-color: #464646;*/
 }
+
+  
+
 .slider-overlay{
     width: 100%;
     height: 100%;
@@ -98,14 +139,44 @@ sliders starts
     position: absolute;
     top: 70%;
     width: 100%;
+    /*left: 42%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
 }
+/*@media only screen and (max-width: 767px) {
+    
+    .slider-content{
+        position: absolute;
+        top: 70%;
+        width: 100%;
+        left: 0%;
+       }
+       .btn1{
+        padding: 13px 18px;
+        background-color: transparent;
+        color: rgb(150, 18, 29);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 13px;
+        border: 2px solid rgb(70, 156, 206);
+        border-top-left-radius: 15px;
+        transition: all 0.5s ease-in-out;
+        margin-left: 18%;
+    }
+    .social-networks {
+        /*margin-left: 3.5% !important;
+    }
+    } */
 .icons .fa{
     font-size: 39px;
     margin-right: 7px;
 }
-.cta-div{
+/*.cta-div{
     
-}
+}*/
 .btn1{
     padding: 13px 18px;
     background-color: transparent;
@@ -142,6 +213,7 @@ sliders starts
     background-color: skyblue;
     border: 3px dashed deepskyblue;
 }
+
 .social-networks a.fa{
     border: 1px solid pink;
     padding: 10px;
@@ -161,7 +233,7 @@ sliders starts
 
 }
 
-/* slider presentation galerie*/
+ slider presentation galerie
 .service-area{
     margin-top: 30px;
 }
@@ -341,4 +413,239 @@ sliders starts
 .img-wrapper img:hover{
     transform: scale(1.5);
     cursor: zoom-out;
+}
+
+
+
+/*--------------videos styles ------------*/
+.video-area{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/illustrator/paonCanva.png);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    margin-top: 00px;
+  background-attachment: fixed;
+}
+.video-area1{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/illustrator/coeurCentreCanva.png);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    margin-top: 00px;
+  background-attachment: fixed;
+}
+.video-area2{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/illustrator/parapluieCanva.png);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    margin-top: 00px;
+  background-attachment: fixed;
+}
+.video-area3{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/illustrator/boucheCanva.png);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    margin-top: 00px;
+  background-attachment: fixed;
+}
+.video-area4{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/images/illustrator/dentsCanva.png);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    margin-top: 00px;
+  background-attachment: fixed;
+}
+
+
+.play{
+    background:#FFF url(/images/illustrator/playButton.png) no-repeat 50% 50%;
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  box-shadow: 0px 0px 0px 20px rgba(0,167,221,0.5);
+}
+.play:hover{
+    background-color: rgb(8, 248, 248);
+    opacity: 0.8;
+}
+.video-container{
+    position: relative;
+    padding-bottom: 54.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: -130px;
+    display: none;
+}
+.video-container1{
+    position: relative;
+    padding-bottom: 54.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: -130px;
+    display: none;
+}
+.video-container2{
+    position: relative;
+    padding-bottom: 54.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: -130px;
+    display: none;
+}
+.video-container3{
+    position: relative;
+    padding-bottom: 54.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: -130px;
+    display: none;
+}
+.video-container4{
+    position: relative;
+    padding-bottom: 54.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: -130px;
+    display: none;
+}
+
+
+.videoTitre{
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: xx-large;
+    letter-spacing: 5px;
+
+}
+/*--------------blog--------------*/
+.latest-news-area{
+    margin-top: 40px;
+}
+.latest-news-wrap{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2 );
+}
+.news-img{
+    position: relative;
+}
+
+.news-img::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(202, 236, 236);
+    
+    content: "";
+    opacity: 0;
+    transform: scale(.8);
+    transition: all 0.4s;
+}
+.latest-news-wrap:hover .news-img::before{
+    opacity: 0.5;
+    transform: scale(1);
+}
+.deat{
+    background: #f89406 none repeat scroll 0 0;
+    height: 70px;
+    left: 0vh;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    padding: 10px;
+}
+.deat span{
+    display: block;
+    color: rgb(252, 249, 249);
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+.news-content{
+    padding: 20px;
+    margin-left: -20px;
+}
+.news-content i{
+    font-size: 18px;
+    display: inline-block;
+
+}
+.news-content .fa{
+    padding: 10px 10px;
+   
+    cursor: pointer;
+}
+.news-content .fa-facebook{
+    color: #3b5995;
+}
+.news-content .fa-twitter{
+    color: #0084b4;
+}
+.news-content .fa-linkedin{
+    color: #0077b5;
+}
+.news-content .fa-whatsapp{
+    color: #34af23;
+}
+.news-content p{
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-top: 20px;
+}
+.news-content a{
+    background-color: royalblue;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: rgb(255, 254, 254); 
+    transition: all 0.5s ease-in;
+}
+.news-content a:hover{
+    font-size: 14px;
+    border: 2px dashed #0084b4;
+    border-top-right-radius: 20px;
+    background-color: transparent;
+    color: rgb(28, 44, 53);
+    margin-right: 0;
+    text-decoration: none;
+    font-weight: 700;
 }
