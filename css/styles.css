@@ -486,7 +486,7 @@ while the background image is loading
 
 
 .play{
-    background:#FFF url(/images/illustrator/playButton.png) no-repeat 50% 50%;
+    background:#FFF url(/images/illustrator/playButton.png)  no-repeat 50% 50%;
     width: 410px;
     height: 410px;
     border-radius: 50%;
